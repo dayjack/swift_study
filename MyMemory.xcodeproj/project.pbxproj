@@ -9,23 +9,31 @@
 /* Begin PBXBuildFile section */
 		7E31C77325846D16004C7A71 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E31C77225846D16004C7A71 /* AppDelegate.swift */; };
 		7E31C77525846D16004C7A71 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E31C77425846D16004C7A71 /* SceneDelegate.swift */; };
-		7E31C77725846D16004C7A71 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E31C77625846D16004C7A71 /* ViewController.swift */; };
 		7E31C77A25846D16004C7A71 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E31C77825846D16004C7A71 /* Main.storyboard */; };
 		7E31C77D25846D16004C7A71 /* MyMemory.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7E31C77B25846D16004C7A71 /* MyMemory.xcdatamodeld */; };
 		7E31C77F25846D16004C7A71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E31C77E25846D16004C7A71 /* Assets.xcassets */; };
 		7E31C78225846D16004C7A71 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E31C78025846D16004C7A71 /* LaunchScreen.storyboard */; };
+		7E31C78D2584759F004C7A71 /* MemoListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E31C78C2584759F004C7A71 /* MemoListVC.swift */; };
+		7E31C790258475EE004C7A71 /* MemoFormVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E31C78F258475EE004C7A71 /* MemoFormVC.swift */; };
+		7E31C79325847616004C7A71 /* MemoReadVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E31C79225847616004C7A71 /* MemoReadVC.swift */; };
+		7E31C7962584768F004C7A71 /* MemoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E31C7952584768F004C7A71 /* MemoCell.swift */; };
+		7E31C799258476E6004C7A71 /* MemoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E31C798258476E6004C7A71 /* MemoData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7E31C76F25846D16004C7A71 /* MyMemory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyMemory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E31C77225846D16004C7A71 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7E31C77425846D16004C7A71 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7E31C77625846D16004C7A71 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7E31C77925846D16004C7A71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7E31C77C25846D16004C7A71 /* MyMemory.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyMemory.xcdatamodel; sourceTree = "<group>"; };
 		7E31C77E25846D16004C7A71 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7E31C78125846D16004C7A71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7E31C78325846D16004C7A71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E31C78C2584759F004C7A71 /* MemoListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoListVC.swift; sourceTree = "<group>"; };
+		7E31C78F258475EE004C7A71 /* MemoFormVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoFormVC.swift; sourceTree = "<group>"; };
+		7E31C79225847616004C7A71 /* MemoReadVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoReadVC.swift; sourceTree = "<group>"; };
+		7E31C7952584768F004C7A71 /* MemoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoCell.swift; sourceTree = "<group>"; };
+		7E31C798258476E6004C7A71 /* MemoData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,12 +68,16 @@
 			children = (
 				7E31C77225846D16004C7A71 /* AppDelegate.swift */,
 				7E31C77425846D16004C7A71 /* SceneDelegate.swift */,
-				7E31C77625846D16004C7A71 /* ViewController.swift */,
 				7E31C77825846D16004C7A71 /* Main.storyboard */,
+				7E31C798258476E6004C7A71 /* MemoData.swift */,
+				7E31C7952584768F004C7A71 /* MemoCell.swift */,
 				7E31C77E25846D16004C7A71 /* Assets.xcassets */,
 				7E31C78025846D16004C7A71 /* LaunchScreen.storyboard */,
 				7E31C78325846D16004C7A71 /* Info.plist */,
 				7E31C77B25846D16004C7A71 /* MyMemory.xcdatamodeld */,
+				7E31C78C2584759F004C7A71 /* MemoListVC.swift */,
+				7E31C78F258475EE004C7A71 /* MemoFormVC.swift */,
+				7E31C79225847616004C7A71 /* MemoReadVC.swift */,
 			);
 			path = MyMemory;
 			sourceTree = "<group>";
@@ -140,8 +152,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E31C7962584768F004C7A71 /* MemoCell.swift in Sources */,
+				7E31C799258476E6004C7A71 /* MemoData.swift in Sources */,
+				7E31C78D2584759F004C7A71 /* MemoListVC.swift in Sources */,
+				7E31C790258475EE004C7A71 /* MemoFormVC.swift in Sources */,
+				7E31C79325847616004C7A71 /* MemoReadVC.swift in Sources */,
 				7E31C77D25846D16004C7A71 /* MyMemory.xcdatamodeld in Sources */,
-				7E31C77725846D16004C7A71 /* ViewController.swift in Sources */,
 				7E31C77325846D16004C7A71 /* AppDelegate.swift in Sources */,
 				7E31C77525846D16004C7A71 /* SceneDelegate.swift in Sources */,
 			);
@@ -300,7 +316,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = yujin.MyMemory;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -319,7 +335,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = yujin.MyMemory;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
