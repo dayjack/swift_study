@@ -161,7 +161,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <segue destination="6wW-q9-5Zr" kind="show" identifier="read_sg" id="l16-8W-8LH"/>
+                        <segue destination="6wW-q9-5Zr" kind="show" identifier="read_sg" id="55F-ed-5oh"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ei1-93-JJX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -212,7 +212,7 @@
                             <constraint firstItem="aYo-NV-Ft5" firstAttribute="trailing" secondItem="FJh-Kf-VD9" secondAttribute="trailing" constant="16" id="vLk-NK-Fag"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="rl7-oi-BXh"/>
+                    <navigationItem key="navigationItem" title="Title" id="4iI-AN-GoU"/>
                     <connections>
                         <outlet property="contents" destination="FJh-Kf-VD9" id="3e1-xY-cXI"/>
                         <outlet property="img" destination="VFi-Jf-CrQ" id="na8-ML-sSv"/>
@@ -221,7 +221,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TUL-Op-Vtb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="488.80000000000001" y="-902.69865067466276"/>
+            <point key="canvasLocation" x="516" y="-903"/>
         </scene>
         <!--메모 작성-->
         <scene sceneID="HiP-0p-zc9">
@@ -280,7 +280,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wEu-Vv-Vwg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="488.80000000000001" y="-239.73013493253376"/>
+            <point key="canvasLocation" x="737" y="-126"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="FbG-7U-oyu">

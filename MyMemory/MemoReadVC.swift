@@ -19,7 +19,7 @@ class MemoReadVC: UIViewController {
         formatter.dateFormat = "dd일 HH:mm분에 작성됨"
         let dateString = formatter.string(from: (param?.regdate)!)
         // 3. 네비게이션 타이틀에 날짜를 표시
-        self.navigationController?.title = dateString
+        self.navigationItem.title = dateString
     }
     
     //콘텐츠 데이터를 저장하는 변수
