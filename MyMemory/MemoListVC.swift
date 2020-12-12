@@ -21,12 +21,14 @@ class MemoListVC: UITableViewController {
         return count
     }
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
         // 1. memolist 배열 데이터에서 주어진 행에 맞는 데이터를 꺼낸다.
         let row = self.appDelegate.memolist[indexPath.row]
         // 2. 이미지 속성이 비어 있을 경우 "memoCell", 아니면 "memoCellWithImage"
         let cellId = row.image == nil ? "memoCell" : "memoCellWithImage"
         // 3. 재사용 큐로부터 프로토타입 셀의 인스턴스를 전달받는다.
         if let cell = tableView.dequeueReusableCell(withIdentifier: cellId) as? MemoCell {
+            // 캐스팅이 실패하지 않았을 경우
             cell.subject?.text = row.title
             cell.contents?.text = row.contents
             cell.img?.image = row.image
@@ -37,18 +39,23 @@ class MemoListVC: UITableViewController {
             // 6. 객체를 리턴한다.
             return cell
         } else {
+            // 캐스팅이 실패하였을 경우
             return MemoCell()
         }
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        // 세그웨이 read_sg 실행하여 화면전환
         self.performSegue(withIdentifier: "read_sg", sender: self)
     }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // 세그웨이 read_sg가 실행 되었을경우
         if segue.identifier == "read_sg" {
+            // 목적지 뷰컨트롤러 인스턴스 생성
             let vc  = segue.destination as? MemoReadVC
+            // 목적지 뷰컨트롤러 변수에 데이터 대입
             vc?.param = self.appDelegate.memolist[tableView.indexPathForSelectedRow!.row]
         }
     }
-   
 }

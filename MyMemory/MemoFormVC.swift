@@ -52,13 +52,13 @@ class MemoFormVC: UIViewController, UIImagePickerControllerDelegate, UINavigatio
         // 액션시트 생성
         let alert = UIAlertController(title: nil, message: "이미지를 가져올 곳을 선택해주세요", preferredStyle: .actionSheet)
         let cameraAction = UIAlertAction(title: "카메라", style: .default) { (_) in
+            // 카메라 실행
             picker.sourceType = .camera
             self.present(picker, animated: true)
         }
         let albumAction = UIAlertAction(title: "사진 라이브러리", style: .default) { (_) in
             // 이미지 피커화면을 표시한다.
             self.present(picker, animated: false)
-            
         }
         alert.addAction(cameraAction)
         alert.addAction(albumAction)
@@ -80,5 +80,4 @@ class MemoFormVC: UIViewController, UIImagePickerControllerDelegate, UINavigatio
         // 내비게이션 타이틀에 표시한다.
         self.navigationItem.title = self.subject
     }
-
 }

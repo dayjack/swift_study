@@ -21,7 +21,6 @@ class MemoReadVC: UIViewController {
         // 3. 네비게이션 타이틀에 날짜를 표시
         self.navigationItem.title = dateString
     }
-    
     //콘텐츠 데이터를 저장하는 변수
     var param: MemoData?
     
